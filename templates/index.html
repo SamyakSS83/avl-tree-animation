@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AVL Tree Rotations Demo</title>
+  <style>
+    :root {
+      --primary-color: #4a76a8;
+      --secondary-color: #5a85b7;
+      --accent-color: #3b5998;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    h1, h2 {
+      text-align: center;
+      color: var(--primary-color);
+    }
+    
+    h1 {
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 15px;
+      font-size: 2.5em;
+    }
+    
+    .intro {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow);
+    }
+    
+    .operation-section {
+      margin-bottom: 40px;
+    }
+    
+    .demo-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    
+    .demo-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+    
+    .demo-button:hover {
+      background-color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+    
+    .explanation {
+      background-color: white;
+      border-left: 4px solid var(--accent-color);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 0 5px 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>AVL Tree Rotations Demonstrations</h1>
+  
+  <div class="intro">
+    <p>This application demonstrates the various rotations in AVL trees during insertion and deletion operations. AVL trees are self-balancing binary search trees where the height difference between the left and right subtrees (balance factor) for any node is at most 1.</p>
+  </div>
+  
+  <div class="operation-section">
+    <h2>Insertion Operations</h2>
+    <p>See how AVL trees maintain balance when new nodes are inserted:</p>
+    
+    <div class="demo-links">
+      <a href="/demo/ll-insert" class="demo-button">LL Rotation</a>
+      <a href="/demo/rr-insert" class="demo-button">RR Rotation</a>
+      <a href="/demo/lr-insert" class="demo-button">LR Rotation</a>
+      <a href="/demo/rl-insert" class="demo-button">RL Rotation</a>
+    </div>
+    
+    <div class="explanation">
+      <p><strong>LL Case:</strong> When the left subtree becomes too heavy on the left side.</p>
+      <p><strong>RR Case:</strong> When the right subtree becomes too heavy on the right side.</p>
+      <p><strong>LR Case:</strong> When the left subtree becomes too heavy on its right side.</p>
+      <p><strong>RL Case:</strong> When the right subtree becomes too heavy on its left side.</p>
+    </div>
+  </div>
+  
+  <div class="operation-section">
+    <h2>Deletion Operations</h2>
+    <p>See how AVL trees rebalance after nodes are deleted:</p>
+    
+    <div class="demo-links">
+      <a href="/demo/ll-delete" class="demo-button">LL Rotation</a>
+      <a href="/demo/rr-delete" class="demo-button">RR Rotation</a>
+      <a href="/demo/lr-delete" class="demo-button">LR Rotation</a>
+      <a href="/demo/rl-delete" class="demo-button">RL Rotation</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 AVL Tree Rotations Demo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
